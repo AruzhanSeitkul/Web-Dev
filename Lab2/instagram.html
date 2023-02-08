@@ -1,10 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
 </head>
-<body>
-$END$
+
+<style>
+    .pics{
+        position: absolute;
+        left: 300px;
+        top:30px;
+    }
+    .login1{
+        width: 325px;
+        padding: 15px;
+        text-align: center;
+        background-color: #fafafa;
+        border: 1px solid #dadde1;
+        position: absolute;
+        top: 50px;
+        left: 750px;
+    }
+
+    .login2{
+        width: 335px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fafafa;
+        border: 1px solid #dadde1;
+        position: absolute;
+        top: 460px;
+        left: 750px;
+    }
+    .login1 input{
+        width: 260px;
+        margin-bottom: 7px;
+        padding: 13px;
+        font-size: 11px;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #eeebeb;
+    }
+    .login1 button{
+        width: 287px;
+        height: 34px;
+        background-color: rgba(0,149,255, 0.6);
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 7px;
+        color:white;
+        font-size: 14px;
+        border-radius: 8px;
+        border:none;
+        cursor: pointer;
+    }
+
+    .bottom{
+        width: 300px;
+        position: absolute;
+        top: 535px;
+        left: 780px;
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    a:focus{
+        color: #1fba58;
+    }
+    .login1 a{
+        color: rgb(56, 81, 133);
+    }
+
+    .bottom-links{
+        text-align: center;
+    }
+    .bottom-links a{
+        color: rgb(142, 142, 142);
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        margin-left: 5px;
+        width: 350px;
+        position: relative;
+        top:650px;
+    }
+
+    .bottom-links a:hover{
+        text-decoration: underline;
+
+    }
+
+</style>
+
+<body style="background-color: #fafafa">
+
+<div class="pics">
+  <div class="pic1">
+    <img src="https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png">
+  </div>
+
+  <div class="pic2">
+    <img src="screenshot.png" style="position: absolute; top: 25px; left: 154px; width: 255px;">
+  </div>
+
+</div>
+
+<div class = "login">
+    <div class = "login1">
+        <img src="Instagram_logo.png" width="180" style="margin-bottom: 25px; margin-top: 25px;">
+        <input type = "text" placeholder="Телефон, имя пользователя или эл.адрес">
+        <input type = "password" placeholder="Пароль">
+        <button id="login-button" type="submit">
+            Войти
+        </button>
+        <div style="width: 105px; height: 1px; background-color: rgb(219,219,219); margin-top: 10px; margin-left: 20px "></div>
+        <div style="margin-top: -10px; color: gray; font-family: Arial, sans-serif; font-size: 13px"> ИЛИ </div>
+        <div style="width: 105px; height: 1px; background-color: rgb(219,219,219); margin-left: 200px;margin-top: -7px; "></div>
+
+        <div style="position: relative;  font-family: Arial, sans-serif; font-weight: bold; font-size: 14px">
+            <a href="?" >
+                <img src="fb.png"width="25px" style="margin-top: 15px; position: relative; top: 7px;">
+                Войти через Facebook
+            </a>
+        </div>
+
+        <div style="position: relative;  font-family: Arial, sans-serif; font-size: 12px; margin-top: 25px">
+            <a href="?" style="padding-top: 1000px">
+                Забыли пароль?
+            </a>
+        </div>
+
+    </div>
+
+    <div class="login2">
+        <p style="font-family: Arial, sans-serif; font-size: 14px">
+            У вас еще нет акаунта?
+            <a href="?" style="font-weight: bold; color: rgb(0,149,246)">
+                Зарегистрироваться
+            </a>
+        </p>
+
+    </div>
+</div>
+
+<div class="bottom">
+    <p style="font-family: Arial, sans-serif; font-size: 14px">
+        Установите приложение
+    </p>
+
+    <a href="?">
+        <img src="googlPlay.png" width="120px" >
+    </a>
+    <a href="?">
+        <img src="microsoft.png" width="100px" style="margin-left: 10px" >
+    </a>
+</div>
+
+<div class = "bottom-links">
+    <a href="?">Meta</a>
+    <a href="?">Информация</a>
+    <a href="?">Блог</a>
+    <a href="?">Вакансия</a>
+    <a href="?">Помощь</a>
+    <a href="?">API</a>
+    <a href="?">Конфиденциальность</a>
+    <a href="?">Условия</a>
+    <a href="?">Популярные аккаунты</a>
+    <a href="?">Места</a>
+    <a href="?">Instagram Lite</a>
+    <a href="?">Загрузка контактов и лица, не являющиеся пользователями</a>
+    <br>
+    <a href="?">Русский</a>
+    <a href="?">© 2023 Instagram from Meta</a>
+</div>
 </body>
 </html>

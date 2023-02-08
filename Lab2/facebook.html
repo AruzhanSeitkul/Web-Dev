@@ -1,10 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
 </head>
-<body>
-$END$
+
+<style>
+    body {
+        background-color: #f0f2f5;
+    }
+
+    .logo {
+        position: absolute;
+        top: 176px;
+        left: 240px;
+    }
+
+    h2 {
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        padding: 0 0 20px;
+        color: #1c1e21;
+        position: absolute;
+        top: 250px;
+        left: 267px;
+    }
+
+    .login {
+        width: 350px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 0px 2px;
+        position: absolute;
+        top: 150px;
+        left: 800px;
+
+    }
+
+    .login input {
+        width: 310px;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        outline: none;
+        border: 2px solid #eeebeb;
+    }
+
+    .login input:focus {
+        box-shadow: 0px 0px 2px 1px rgb(25, 110, 230);
+    }
+
+    .login button {
+        width: 345px;
+        height: 45px;
+        background-color: #1877f2;
+        margin-bottom: 15px;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login button:hover {
+        background-color: #166fe5;
+    }
+
+    .login hr {
+        border: 1px solid #dadde1;
+        margin-bottom: 15px;
+        margin-top: 17px;
+    }
+
+    .login a {
+        text-decoration: none;
+        color: #1877f2;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Arial, sans-serif;
+    }
+
+    .login a:hover {
+        text-decoration: underline;
+    }
+
+    .login #new-acc {
+        text-decoration: none;
+        color: white;
+        background-color: #42b72a;
+        padding: 15px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    .login #new-acc:hover {
+        background-color: #36a420;
+    }
+
+    a {
+        color: #1c1e21;
+        text-decoration: none;
+        font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    }
+
+    p {
+        position: absolute;
+        bottom: 140px;
+        left: 800px;
+        width: 380px;
+        color: #1c1e21;
+        font-size: 14px;
+        font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .bottom-links {
+        text-align: center;
+        font-size: 12px;
+        position: relative;
+        top: 750px;
+        background-color: white;
+        padding-top: 30px;
+    }
+
+    .bot-link a {
+        color: rgb(142, 142, 142);
+        font-family: Arial, sans-serif;
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    .bottom-links a:hover {
+        text-decoration: underline;
+    }
+
+    .bot-link {
+        margin-left: 400px;
+        text-align: left;
+    }
+    .links ul {
+        position: relative;
+        right: 48px;
+        margin-right: 100px; /* Обнуляем значение отступов */
+    }
+    .links ul li {
+        border: none;
+        display: inline; /* Отображать как строчный элемент */
+        margin-right: 7px; /* Отступ слева */
+        padding: 3px; /* Поля вокруг текста */
+    }
+
+</style>
+<body style="margin: 0">
+
+<div class="logo">
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" width="300">
+</div>
+
+<h2 style="width: 460px">
+    Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.
+</h2>
+
+<div class="login">
+    <input type="text" placeholder="Электронный адрес или номер телефона">
+    <input type="password" placeholder="Пароль">
+    <button id="login-button" type="submit">
+        Вход
+    </button>
+
+    <a href="https://ru-ru.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+       alt="Forgot password">
+        Забыли пароль?
+    </a>
+
+    <hr>
+    <a href="?" id="new-acc">
+        Создать новый аккаунт
+    </a>
+
+</div>
+
+<p>
+    <strong><a href="?">Создать Страницу </a></strong>знаменитости, музыкальной группы или компании
+</p>
+
+
+<div class="bottom-links">
+    <div class="bot-link">
+        <a href="?">Русский</a>
+        <a href="?">English (US)</a>
+        <a href="?">Bahasa Indonesia</a>
+        <a href="?">中文(简体)</a>
+        <a href="?">Қазақша</a>
+        <a href="?">Deutsch</a>
+        <a href="?">한국어</a>
+        <a href="?">Shqip</a>
+        <a href="?">Español</a>
+        <a href="?">Português (Brasil)</a>
+        <a href="?">
+            <button type="button">
+                +
+            </button>
+        </a>
+        <hr style="margin-right: 300px">
+        <div class="links">
+         <ul>
+            <li><a href="/reg/" title="Регистрация на Facebook">Регистрация</a></li>
+            <li><a href="/login/" title="Войдите на Facebook">Вход</a></li>
+            <li><a href="https://messenger.com/" title="Оцените Messenger.">Messenger</a></li>
+            <li><a href="/lite/" title="Facebook Lite для Android.">Facebook Lite</a></li>
+            <li><a href="https://www.facebook.com/watch/" title="Посмотреть наши видео на Facebook Watch.">Watch</a>
+            </li>
+            <li><a href="/places/" title="Ознакомьтесь с популярными местами на Facebook.">Места</a></li>
+            <li><a href="/games/" title="Познакомьтесь с играми на Facebook.">Игры</a></li>
+            <li><a href="/marketplace/" title="Покупайте и продавайте через Facebook Marketplace.">Marketplace</a></li>
+            <li><a href="https://pay.facebook.com/" title="Подробнее о Meta Pay" target="_blank">Meta&nbsp;Pay</a></li>
+            <li><a href="https://www.oculus.com/" title="Подробнее об Oculus" target="_blank">Oculus</a></li>
+            <li><a href="https://portal.facebook.com/" title="Узнайте больше о Facebook Portal"
+                   target="_blank">Portal</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a>
+            </li>
+            <li><a href="https://www.bulletin.com/" title="Посмотреть рассылку Bulletin">Bulletin</a></li>
+            <li><a href="/fundraisers/" title="Пожертвовать в поддержку общественно значимых дел">Благотворительные
+                акции</a></li>
+            <li><a href="/biz/directory/" title="Посмотреть наш каталог &quot;Сервисы Facebook&quot;.">Услуги</a></li>
+            <li><a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D"
+                   title="Перейти в Центр информации о выборах.">Центр информации о выборах</a></li>
+            <li><a href="/privacy/policy/?entry_point=facebook_page_footer"
+                   title="Узнайте, как мы собираем, используем и передаем информацию, чтобы обеспечить работу Facebook.">Политика
+                конфиденциальности</a></li>
+            <li><a href="/privacy/center/?entry_point=facebook_page_footer"
+                   title="Узнайте, как управлять настройками конфиденциальности на Facebook.">Центр
+                конфиденциальности</a></li>
+            <li><a href="/groups/explore/" title="Интересные группы.">Группы</a></li>
+            <li><a href="https://about.meta.com/" accesskey="8"
+                   title="Прочтите наш блог, ознакомьтесь с материалами, найдите  вакансии.">Информация</a></li>
+            <li>
+                <a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto"
+                   title="Реклама на  Facebook.">Создать рекламу</a></li>
+            <li><a href="/pages/create/?ref_type=site_footer" title="Создать Страницу">Создать Страницу</a></li>
+            <li><a href="https://developers.facebook.com/?ref=pf"
+                   title="Развивайтесь на нашей платформе.">Разработчикам</a></li>
+            <li><a href="/careers/?ref=pf"
+                   title="Сделайте следующий шаг в карьере в нашей отличной компании.">Вакансии</a></li>
+            <li><a href="/policies/cookies/" title="Узнайте больше о cookies и Facebook." data-nocookies="1">Файлы
+                cookie</a></li>
+            <li><a class="_41ug" data-nocookies="1" href="https://www.facebook.com/help/568137493302217"
+                   title="Подробнее о выборе рекламы.">Рекламные предпочтения<i
+                    class="img sp_h4Swrc8tiWJ_1_5x sx_c523d9"></i></a></li>
+            <li><a data-nocookies="1" href="/policies?ref=pf" accesskey="9" title="Просмотрите наши условия и правила.">Условия
+                использования</a></li>
+            <li><a href="/help/?ref=pf" accesskey="0" title="Посетите наш Справочный центр.">Справка</a></li>
+            <li><a href="help/637205020878504"
+                   title="Прочитайте наше Уведомление о загрузке контактов и лицах, не являющихся пользователями.">Загрузка
+                контактов и лица, не являющиеся пользователями</a></li>
+            <li><a accesskey="6" class="accessible_elem" href="/settings"
+                   title="Посмотреть и отредактировать настройки Facebook.">Настройки</a></li>
+            <li><a accesskey="7" class="accessible_elem" href="/allactivity?privacy_source=activity_log_top_menu"
+                   title="Посмотреть Журнал действий">Журнал действий</a></li>
+
+        </ul>
+        </div>
+        <div style="color: rgb(142,142,142); margin-top: 50px">
+            Meta © 2023
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
