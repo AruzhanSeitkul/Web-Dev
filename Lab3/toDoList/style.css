@@ -1,0 +1,101 @@
+
+.header {
+    background-color: black;
+    height: 50px;
+}
+body{
+    margin: 0;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+}
+
+
+.intext{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    position: absolute;
+    left: 100px;
+}
+
+.addButton{
+    cursor: pointer;
+}
+.btn{
+    border: none;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+}
+
+
+.main {
+    width: 800px;
+    position: absolute;
+    left: 350px;
+    margin-top: 50px;
+}
+
+.myDiv{
+    width: 595px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-input{
+    text-align: center;
+}
+[type="checkbox"]:checked + span{
+        text-decoration: line-through;
+}
+
+.taskname{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.task-input input{
+    width: 500px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid #7f8184;
+}
+
+.addButton{
+    width: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    background-color: #3f6aab;
+    color: white;
+    border: none;
+}
+
+.addButton:hover {
+    background-color: #37568f;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 1px;
+    border: 1px solid #7f8184;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
