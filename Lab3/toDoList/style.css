@@ -86,16 +86,4 @@ h2{
 .addButton:hover {
     background-color: #37568f;
 }
-ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 20px;
-    font-size: 18px;
-    border-radius: 1px;
-    border: 1px solid #7f8184;
-}
-
-ul li.checked {
-    text-decoration: line-through;
-}
 
