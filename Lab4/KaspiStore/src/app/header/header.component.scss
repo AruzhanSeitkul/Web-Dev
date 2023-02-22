@@ -1,0 +1,14 @@
+.header{
+  background-color: #2e47ab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_name{
+    font-size: 28px;
+    font-family: sans-serif;
+    color: white;
+    padding-left: 10px;
+  }
+
+}
