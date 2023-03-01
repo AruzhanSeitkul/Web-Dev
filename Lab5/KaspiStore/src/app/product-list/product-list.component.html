@@ -1,0 +1,23 @@
+<div class="product_container">
+  <div class="products_item" *ngFor="let item of products;let i = index">
+    <img src="assets/closeButton.jpg" class="products_item_remove" (click)="removeItem(i)">
+    <img src="assets/like.png" class="products_item_like" (click)="increaseLike(i)">
+    <p class="products_item_name"  (click)="goToPage(i)">
+      {{item.name}}
+    </p>
+    <img class="products_item_image" src="{{item.img}}"  (click)="goToPage(i)">
+    <p class="products_item_rating">
+      Rating: {{item.rating}}
+    </p>
+    <p class="products_item_likes">
+      Likes: {{item.likes}}
+    </p>
+    <p class="products_item_cost">
+      {{item.cost}} tenge
+    </p>
+    <button class="products_item_share" (click)="shareWithTelegram(i)">
+      Share
+    </button>
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="product">
+  <p class="product_name">
+    {{product.name}}
+  </p>
+  <img src="{{product.img}}" class="product_image">
+  <p class="products_item_rating">
+    Rating: {{product.rating}}
+  </p>
+  <p class="product_cost">
+    Cost: {{product.cost}} tenge
+  </p>
+  <div class="product_gallery">
+    <img src="{{img}}" *ngFor="let img of product.gallery" (click)="changeImg(img)">
+  </div>
+  <p class="product_description">
+    {{product.description}}
+  </p>
+  <button class="product_share" (click)="shareWithTelegram(product.link)">
+    Share
+  </button>
+</div>
+

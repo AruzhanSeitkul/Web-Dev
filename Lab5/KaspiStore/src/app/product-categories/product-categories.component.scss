@@ -1,0 +1,17 @@
+.categories{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+
+  &_name{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: deeppink;
+
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
