@@ -1,0 +1,92 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  &_backimg{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    &:hover{
+      opacity: 80%;
+      cursor: pointer;
+    }
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 24px;
+
+    &_title {
+      font-size: 32px;
+      font-family: sans-serif;
+      font-weight: 600;
+      color: deeppink;
+      cursor: pointer;
+      text-align: center;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    &_but {
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 16px;
+      height: 34px;
+      margin: auto 0;
+      background-color: palevioletred;
+      border-radius: 12px;
+      border: none;
+
+      &:hover{
+        cursor: pointer;
+        opacity: 90%;
+      }
+    }
+
+  }
+
+  &_change {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    &_inp {
+      width: 300px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid palevioletred;
+    }
+
+    &_but2 {
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 16px;
+      height: 34px;
+      margin: auto 0;
+      background-color: palevioletred;
+      border-radius: 12px;
+      border: none;
+
+      &:hover{
+        cursor: pointer;
+        opacity: 90%;
+      }
+    }
+  }
+
+
+}

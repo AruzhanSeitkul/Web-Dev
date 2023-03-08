@@ -1,0 +1,32 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  background-color: palevioletred;
+  column-gap: 26px;
+  padding-right: 80px;
+  height: 80px;
+
+  &_images{
+    width: 24px;
+    height: 22px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &_albums{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+

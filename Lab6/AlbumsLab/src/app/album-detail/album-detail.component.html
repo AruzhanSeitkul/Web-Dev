@@ -1,0 +1,22 @@
+
+<div class="container">
+  <img class="container_backimg" src="assets/arrow.png" (click)="goBack()">
+  <div class="container_box" *ngIf="isEdit===false">
+    <p class="container_box_title" (click)="goToPhotos(album.id)">
+      Title: {{album.title}}
+    </p>
+    <button class="container_box_but" (click)="edit()">
+      Edit
+    </button>
+
+  </div>
+  <div class="container_change" *ngIf="isEdit===true">
+    <input class="container_change_inp" [(ngModel)]="editableText" type="text">
+    <button class="container_change_but2" (click)="save()">
+      Save
+    </button>
+  </div>
+  <img
+    src="assets/initialImg.jpg">
+</div>
+

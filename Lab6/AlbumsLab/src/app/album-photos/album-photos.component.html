@@ -1,0 +1,17 @@
+<div class="photos_container">
+  <div class="back_wrapper">
+    <img src="assets/arrow.png" class="back_btn" (click)="goToAlbum()">
+    <p class="back_text">
+      Go to album
+    </p>
+  </div>
+  <div class="photos">
+    <div class="photos_item" *ngFor="let photo of photos">
+      <p class="photos_item_title">
+        {{photo.title}}
+      </p>
+      <img class="photos_item_thumbnail" src="{{photo.thumbnailUrl}}">
+    </div>
+  </div>
+</div>
+
