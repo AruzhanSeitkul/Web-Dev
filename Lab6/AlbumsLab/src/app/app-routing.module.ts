@@ -28,6 +28,11 @@ const routes: Routes = [
   {
     path: "albums/:id/photos",
     component: AlbumPhotosComponent
+  },
+  {
+    path: "",
+    redirectTo: 'home',
+    pathMatch:"full"
   }
 ];
 
