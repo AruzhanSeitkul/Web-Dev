@@ -1,0 +1,26 @@
+<div class="center" [formGroup]="signinForm">
+  <h1>Login</h1>
+  <form>
+    <div class="inputbox">
+      <input
+        type="text"
+        class="form-control"
+        formControlName="username"
+        required
+      />
+      <span>Email</span>
+    </div>
+    <div class="inputbox2">
+      <input
+        type="password"
+        class="form-control"
+        formControlName="password"
+        required
+      />
+      <span>Password</span>
+    </div>
+    <div class="inputbox">
+      <button (click)="loginUser()" class="button">Sign in</button>
+    </div>
+  </form>
+</div>

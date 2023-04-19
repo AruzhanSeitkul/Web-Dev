@@ -1,0 +1,12 @@
+<div class="company_box">
+  <p class="company_box_name">{{curCompany.name}}</p>
+  <p class="company_box_desc">Description: {{curCompany.description}}</p>
+  <p class="company_box_city">City: {{curCompany.city}}</p>
+  <p class="company_box_adres">Address: {{curCompany.address}}</p>
+  <p class="company_box_vacancies">Vacancies:</p>
+  <div class="company_box_comp" *ngFor="let v of vacancies">
+    <p class="company_box_comp_name">Vacancy: {{v.name}}</p>
+    <p class="company_box_comp_desc"> Description: {{v.description}}</p>
+    <p class="company_box_comp_sal">Salary: {{v.salary}}</p>
+  </div>
+</div>

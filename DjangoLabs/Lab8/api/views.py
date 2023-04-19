@@ -11,7 +11,7 @@ from .serializer import *
 # class based, method based views
 
 def index(request):
-    return HttpResponse("I am learning Web-dev")
+    return HttpResponse("I am learning Web Dev")
 
 
 class ProductView(APIView):
@@ -19,6 +19,8 @@ class ProductView(APIView):
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
+
+
 
 
 class ProductByIdView(APIView):

@@ -1,0 +1,13 @@
+<div class="companies">
+  <p class="companies_title">Companies List</p>
+  <div class="companies_box">
+    <div class="companies_box_item" *ngFor="let company of companies ;let i=index">
+      <p (click)="getCompanyId(i)" class="companies_box_item_name">{{ company.name }}</p>
+      <div class="companies_box_item_desc">
+        <p class="companies_box_item_desc_title">Description:</p>
+        <p class="companies_box_item_desc_txt">{{company.description}}</p>
+      </div>
+      <p class="companies_box_item_address">Address: {{company.address}}</p>
+    </div>
+  </div>
+</div>

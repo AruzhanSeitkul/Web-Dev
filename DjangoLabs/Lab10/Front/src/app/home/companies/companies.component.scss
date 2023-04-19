@@ -1,0 +1,72 @@
+.companies{
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  &_title{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
+  &_box{
+    padding: 30px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    flex-direction: row;
+    column-gap: 30px;
+    &_item{
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 10px;
+      &_address{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-family: sans-serif;
+
+      }
+      &_desc{
+        width: 300px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid black;
+        &_title{
+          margin-right: auto;
+          margin-left: auto;
+          font-weight: 700;
+          font-family: sans-serif;
+          font-size: 20px;
+        }
+        &_txt{
+          margin-right: auto;
+          margin-left: auto;
+          font-weight: 700;
+          font-family: sans-serif;
+          font-size: 18px;
+        }
+      }
+      &_name{
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Sansita Swashed", cursive;
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+
+
+      }
+    }
+  }
+}

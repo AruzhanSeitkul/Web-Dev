@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 12px 64px;
+  background-color: #880000;
+
+  &_logo {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+  &_logout{
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #ce8483;
+    margin-left: 1100px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 30px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
